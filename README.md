@@ -20,8 +20,8 @@ A full-stack todo application with a Flask backend and React Router frontend.
 
 ## Prerequisites
 
-- **Python 3.10+** with [uv](https://github.com/astral-sh/uv) package manager
-- **Node.js 18+** with npm
+- **Python 3.10+** 
+- **Node.js 18+**
 
 ## Backend Setup
 
@@ -34,10 +34,11 @@ The backend is a Flask API that provides todo management endpoints.
    cd backend
    ```
 
-2. Install dependencies using uv:
+2. Install dependencies:
    ```bash
-   uv sync
+   pip install -r requirements.txt
    ```
+   (Optionally, use `uv` for dependency management)
 
 ### Running the Backend
 
