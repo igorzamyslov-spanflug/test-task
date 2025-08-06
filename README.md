@@ -33,20 +33,28 @@ The backend is a Flask API that provides todo management endpoints.
    ```bash
    cd backend
    ```
+   
+2. Create and activate virtual environment
+   ```
+         python3 -m venv .venv
+         source .venv/bin/activate
+   ```
 
-2. Install dependencies:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-   (Optionally, use `uv` for dependency management)
+   (Alternatively, use `uv` for dependency management)
 
 ### Running the Backend
 
 Start the Flask development server:
 
 ```bash
-uv run python app.py
+python3 app.py
 ```
+
+(Alternatively run `uv run python app.py` if using `uv`)
 
 The backend will be available at `http://localhost:7999`
 
@@ -77,12 +85,3 @@ npm run dev
 ```
 
 The frontend will be available at `http://localhost:3001`
-
-#### Production Build
-
-Build and start the production server:
-
-```bash
-npm run build
-npm start
-```
